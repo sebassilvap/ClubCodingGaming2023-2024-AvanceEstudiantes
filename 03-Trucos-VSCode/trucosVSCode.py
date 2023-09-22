@@ -281,7 +281,12 @@ print('Aquí va a otra-AQUI PUEDO ESCRIBIR LO QUE SEA!!')
 print('Una tercera-AQUI PUEDO ESCRIBIR LO QUE SEA!!')
 print('FIN-AQUI PUEDO ESCRIBIR LO QUE SEA!!')
 
+# ==> Solución
 
+print('**linea adicional** 000Esta es una primera línea')
+print('**linea adicional** Aquí va a otra000')
+print('**linea adicional** 000Una tercera')
+print('**linea adicional** FIN000')
 
 # =========================================================================================
 
@@ -315,8 +320,23 @@ print('Águila')
 
 # (A-Z)
 
+print('Águila')
+print('Gato')
+print('León')
+print('Perro')
+print('Ratón')
+print('Tigre')
+
+
 
 # (Z-A)
+
+print('Tigre')
+print('Ratón')
+print('Perro')
+print('León')
+print('Gato')
+print('Águila')
 
 
 # =========================================================================================
@@ -339,13 +359,19 @@ print('apliCANdo la MAGia de VISual StudIO CODe')
 # ==> Solución
 
 # Mayúsculas
-
+print('UN PRINT SIN ORDEN EN SUS PALABRAS')
+print('PARA PODER PRACTICAR EL CASE TRANSFORMATION')
+print('APLICANDO LA MAGIA DE VISUAL STUDIO CODE')
 
 # Minúsculas
-
+print('un print sin orden en sus palabras')
+print('para poder practicar el case transformation')
+print('aplicando la magia de visual studio code')
 
 # Formato de Título
-
+print('Un Print Sin Orden En Sus Palabras')
+print('Para Poder Practicar El Case Transformation')
+print('Aplicando La Magia De Visual Studio Code')
 
 # =========================================================================================
 
@@ -355,14 +381,14 @@ print('apliCANdo la MAGia de VISual StudIO CODe')
 ## EJERCICIO
 # - Seleccionar TODAS las ocurrencias en el documento
 # - que contengan:
-#   estaEsUnaPalabraQueSoloExisteAqui
+#   PALABRA
 # - y cambiarla por PALABRA
 
-print('estaEsUnaPalabraQueSoloExisteAqui Texto1 Print1')
-print('estaEsUnaPalabraQueSoloExisteAqui Texto2 Print2')
-print('estaEsUnaPalabraQueSoloExisteAqui Texto3 Print3')
-print('estaEsUnaPalabraQueSoloExisteAqui Texto4 Print4')
-print('estaEsUnaPalabraQueSoloExisteAqui Texto5 Print5')
+print('PALABRA Texto1 Print1')
+print('PALABRA Texto2 Print2')
+print('PALABRA Texto3 Print3')
+print('PALABRA Texto4 Print4')
+print('PALABRA Texto5 Print5')
 
 # =========================================================================================
 
@@ -381,3 +407,8 @@ print('PalabraEspecial es una palabra extraña')
 
 # ==> Solución
 
+print('No se me ocurre una PalabraEspecial')
+print('Necesito una PythonEspecial para este ejercicio')
+print('¿Me podrías sugerir una PythonEspecial para este ejercicio?')
+print('¿Qué PythonEspecial se te viene en mente ahora?')
+print('PythonEspecial es una palabra extraña')

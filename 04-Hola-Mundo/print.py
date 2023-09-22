@@ -10,11 +10,18 @@
 # ===================================================================
 
 # 1) Clásico 'Hola Mundo'
-
-
+print('Hola Mundo')
+print('Hola muchachos me llamo Sebastián')
+print('Ecuador')
+print('China')
+print('USA')
 
 
 # 2) Imprimir una línea vacía
+print('')
+print("Hola")
+print()
+print('Hey me gusta Python!!!')
 
 
 
@@ -23,4 +30,12 @@
 # - por el momento saber lo siguiente
 # - una cadena de texto (string) en python la definimos con comilla simple ó doble
 # - '' ó ""
+# - también puede ser entre 3 comillas
+
+print("""Hola""")
+
+"""
+- comentario 1
+- comentario 2
+"""
 

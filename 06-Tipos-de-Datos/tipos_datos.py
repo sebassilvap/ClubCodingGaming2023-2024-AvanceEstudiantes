@@ -49,6 +49,17 @@ None Type:	     |    NoneType
 # - nos va a salir una palabrita "class" => no prestar atención por el momento
 # - hacer de cuenta que nos dice el tipo / ¿qué tipo de dato es?
 #! RECORDAR: tema funciones & clases lo veremos luego
+print()
+print('-------- 1) type() --------')
+
+nombre = 'Sebas'
+print(nombre)
+#type(nombre) # para ver el resultado necesito usar print
+print(type(nombre))
+
+# podemos hacerlo de una manera más ELEGANTE
+print(nombre , type(nombre))
+
 
 
 
