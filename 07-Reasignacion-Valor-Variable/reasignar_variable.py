@@ -16,10 +16,31 @@
 #? Fases de una variable
 
 # 1) Creación = Declaración + Asignación
+variable = 'hola mundo'
+
+# variable => declaración / nombrar - poner un nombre a la variable
+# calificacion_matematicas
+
+# = 'hola mundo' => asignación de valor a la variable declarada
+
+print( variable, type(variable) )
 
 
 # 2) Reasignación de valor a variable con el mismo tipo
+variable = 'otro string'
+print( variable, type(variable) )
 
 
 # 3) Reasignación de valor con otro tipo de dato
 
+variable = 123
+print( variable, type(variable) )
+
+variable = False
+print( variable, type(variable) )
+
+variable = 10.5
+print( variable, type(variable) )
+
+variable = None
+print( variable, type(variable) )

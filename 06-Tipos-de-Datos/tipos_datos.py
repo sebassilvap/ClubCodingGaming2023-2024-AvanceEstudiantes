@@ -53,13 +53,25 @@ print()
 print('-------- 1) type() --------')
 
 nombre = 'Sebas'
+edad = 36
+es_profesor = True
+
 print(nombre)
-#type(nombre) # para ver el resultado necesito usar print
-print(type(nombre))
+print(edad)
+print(es_profesor)
 
-# podemos hacerlo de una manera más ELEGANTE
-print(nombre , type(nombre))
+# Averiguando el tipo de dato
+#type(nombre) #! de esta manera no vamos a ver nada necesitamos usar el print
 
+print( type(nombre) )
+print( type(edad) )
+print( type(es_profesor) )
+
+# podemos hacer esto / imprimir en la consola
+# de una manera elegante
+print( nombre , '|' , type(nombre) )
+print( edad , '|' , type(edad) )
+print( es_profesor , '|' , type(es_profesor) )
 
 
 
@@ -70,10 +82,43 @@ print(nombre , type(nombre))
 #   #  B) Con comilla doble   => ""
 #   #  C) Con 6 comillas dobles o simples => para textos largos (lo usamos para comentarios multilínea)
 
+print()
+print('-------- 2) string --------')
+
 # - puede ser 1 o más caracteres
 # - (en otros lenguajes cuando solo es uno se tiene el tipo char)
 
+string_1 = 'hola mundo'
+string_2 = '     hola mundo      '
+string_3 = 'A'
+string_4 = "hola mundo"
+string_5 = '123456'
+string_6 = ''
+string_7 = ""
+string_8 = "Hola esto va en 'comillas simples' #$%^^"
+string_9 = 'Hola esto va en "comillas simples" #$%^^'
+#string_test = 'es palabra va en 'comillas simples' ' #! ERROR
+string_10 = '''hola mis queridos alumnos
+cómo han estado
+espero estén bien
+att. profe sebas'''
 
+string_11 = """me gusta programar
+me gusta python
+python es chévere"""
+
+# => impresión en la consola
+print( string_1 , '| TIPO =' , type(string_1)  )
+print( string_2 , '| TIPO =' , type(string_2)  )
+print( string_3 , '| TIPO =' , type(string_3)  )
+print( string_4 , '| TIPO =' , type(string_4)  )
+print( string_5 , '| TIPO =' , type(string_5)  )
+print( string_6 , '| TIPO =' , type(string_6)  )
+print( string_7 , '| TIPO =' , type(string_7)  )
+print( string_8 , '| TIPO =' , type(string_8)  )
+print( string_9 , '| TIPO =' , type(string_9)  )
+print( string_10 , '| TIPO =' , type(string_10)  )
+print( string_11 , '| TIPO =' , type(string_11)  )
 
 
 
@@ -84,6 +129,19 @@ print(nombre , type(nombre))
 # - números CERO
 # - SIN DECIMALES
 
+print()
+print('-------- 3) int --------')
+
+entero_1 = 20
+entero_2 = -2
+entero_3 = +5 # no es necesario
+#entero_test += 5 #! ya vamos a ver luego => suma en la signación!
+entero_4 = 0
+
+print( entero_1, '| TIPO =', type(entero_1) )
+print( entero_2, '| TIPO =', type(entero_2) )
+print( entero_3, '| TIPO =', type(entero_3) )
+print( entero_4, '| TIPO =', type(entero_4) )
 
 
 
@@ -93,6 +151,29 @@ print(nombre , type(nombre))
 # - números decimales negativos
 # - CERO decimal => 0.0
 
+print()
+print('-------- 4) float --------')
+
+decimal_1 = 10.5
+decimal_2 = 5.888888888888888888888888888
+decimal_3 = -100000.9999
+decimal_4 = 0.000000000000001
+# notación científica
+# 2 e -5 = 2 x 10 ^ -5
+# 1.333 x 10 ^ -8 => 1.333 e -8
+decimal_5 = 0.0
+decimal_6 = -0.0
+decimal_7 = 0.0000000000000000000
+
+
+print( decimal_1 , '| TIPO =' , type(decimal_1) )
+print( decimal_2 , '| TIPO =' , type(decimal_2) )
+print( decimal_3 , '| TIPO =' , type(decimal_3) )
+print( decimal_4 , '| TIPO =' , type(decimal_4) )
+print( decimal_5 , '| TIPO =' , type(decimal_5) )
+print( decimal_6 , '| TIPO =' , type(decimal_6) )
+print( decimal_7 , '| TIPO =' , type(decimal_7) )
+
 
 
 
@@ -101,6 +182,19 @@ print(nombre , type(nombre))
 # - valor booleano => Verdadero o Falso
 # - Los valores en inglés con la primera letra en mayúscula
 
+print()
+print('-------- 5) bool --------')
+
+booleano_verdadero = True
+booleano_falso = False
+
+booleano_verdadero_2 = 1
+booleano_falso_2 = 0
+
+print( booleano_verdadero , 'TIPO =' , type(booleano_verdadero) )
+print( booleano_falso , 'TIPO =' , type(booleano_falso) )
+print( booleano_verdadero_2 , 'TIPO =' , type(booleano_verdadero_2) )
+print( booleano_falso_2 , 'TIPO =' , type(booleano_falso_2) )
 
 
 
@@ -112,9 +206,31 @@ print(nombre , type(nombre))
 # - cambiar el valor a la variable => REASIGNAR VALOR DE VARIABLE
 #!  REASIGNAR VALOR DE VARIABLE => veremos a continuación
 
+print()
+print('-------- 6) None --------')
+
+#! java
+# 2 fases para crear una variable
+
+# int a; => declarar la variable
+# a = 20; => asignar valor a variable
+
+# int a = 20 => los 2 pasos en 1 línea
 
 
+a = None
+print( a , type(a) )
 
+a = 20
+print( a , type(a) )
 
+a = 'sebas'
+print( a , type(a) )
 
+a = True
+print( a , type(a) )
 
+a = -10.56789
+print( a , type(a) )
+
+#! DATO CURIOSO
