@@ -29,7 +29,30 @@
 # - a menos que lo pongamos en un print
 #!  pero esto se puede ver en otros editores como Jupyter Notebook sin necesidad de print()
 
+print('')
+print('-------------------- 1) Aritmética Directa --------------------')
 
+5 + 5
+5 * 8
+15 / 3
+35 - 9
+2 ** 3
+10 % 3
+
+print('OPERACIONES')
+print( 5 + 5 )
+print( 5 * 8 )
+print( 15 / 3 ) # el resultado me devuelve en float
+print( 35 - 9 )
+print( 2 ** 3 )
+print( 10 % 3 )
+print('-----------')
+print( 5 + 5 , type( 5 + 5 ) )
+print( 5 * 8 , type( 5 * 8 ) )
+print( 15 / 3 , type( 15 / 3 ) ) # ! float
+print( 35 - 9 , type( 35 - 9 ) )
+print( 2 ** 3 , type( 2 ** 3 ) )
+print( 10 % 3 , type( 10 % 3 ) )
 
 
 # 2) Reglas Matemáticas
@@ -39,6 +62,24 @@
 # - primero ** LUEGO *,/ LUEGO +,-
 # - primero () LUEGO ** LUEGO *,/ LUEGO +,-
 
+#? EJ 1
+print( 3 * 3 + 2 )
+# 9 + 2
+# 11
+
+#? EJ 2:
+print( 3 * 2 + 15 / 5 + 1)
+# 6 + 3.0 + 1
+# 10.0
+print( type(3 * 2 + 15 / 5 + 1) )
+
+#? EJ 3
+print( (3 + 5) * (5 - 2) )
+#         8   *    3
+#             24
+
+print( (3 + 5) * (5 - 2) + 0.0 )
+# 24.0
 
 
 
