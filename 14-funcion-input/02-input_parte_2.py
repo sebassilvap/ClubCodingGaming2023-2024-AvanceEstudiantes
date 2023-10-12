@@ -10,5 +10,5 @@
 # - el valor que devuelve la consola es un string
 # =========================================================================
 
-#? Script de Python para saludar e interactuar con el usuario
-
+#? 1) Script de Python para saludar e interactuar con el usuario
+print('\n1) Script de Python para saludar e interactuar con el usuario')

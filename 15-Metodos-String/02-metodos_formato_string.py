@@ -24,18 +24,12 @@ print('\n1) Para cambiar el tipo')
 # - guardarlos en otra variable
 
 
-
-
 #? 2) Para justificación del texto
 print('\n2) Para justificación del texto')
 # .center(x) => Justificación al centro en x espacios
 # .ljust(x) => Justificación a la izquierda en x espacios
 # .rjust(x) => Justificación a la derecha en x espacios
 
-var_1 = 'python'
-#        012345
-
-print( 'var_1 =' , var_1 , 'len =' , len(var_1) )
 
 # .center(x)
 
@@ -92,6 +86,7 @@ var_1 = 'contextualización'
 
 
 # .rfind()
+var_1 = 'Xuna palabraX que se forma conX'
 
 
 
@@ -115,7 +110,6 @@ print('\n7) .join()')
 # - Con el valor de otra cadena
 
 
-
 #? 8) .split()
 print('\n8) .split()')
 # - transforma una cadena en una lista
@@ -129,19 +123,22 @@ print('\n8) .split()')
 # - en este caso len devuelve el número de elementos en la lista
 
 
-
 #? 9) .splitlines()
 print('\n9) .splitlines()')
 # - transforma un string en lista
 # - separando los saltos de línea (\n)
 
-
-
-# opción: keepends = True => para conservar saltos de línea
+texto = 'Yo programo en Python\nEl programa en Java\nElla en C++'
 
 
 # - Se acopla de mejor manera a un string multilínea
 
+poema = '''
+En una noche de verano
+Yo la conocí
+Nunca lo olvidé
+Siempre la recordaré
+'''
 
 
 #? 9) .expandtabs()
@@ -149,7 +146,6 @@ print('\n9) .expandtabs()')
 # - como su nombre lo indica
 # - sirve para incrementar el tamaño de un tab
 # - dentro de un string
-
 
 
 #? 10) .replace()
@@ -162,4 +158,3 @@ print('\n10) .replace()')
 
 
 # => reemplazando una subcadena (substring)
-

@@ -7,10 +7,11 @@
 # - devuelve este valor como un entero
 # =================================================
 
+
 #? 1) función len en strings
+print('\n1) función len en strings')
 # - devuelve la longitud (número de caracteres) de un string
 
 
-
-
 #? 2) len() => devuelve un valor entero
+print('\n2) len() => devuelve un valor entero')

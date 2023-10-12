@@ -14,8 +14,8 @@ print('\n1) Creación de una lista')
 
 
 
-
 #? 2) Index y Slicing
+print('\n2) Index y Slicing')
 # - al igual que los string
 # - son elementos iterables / de secuencia
 # - podemos acceder a sus elementos por medio de los índices
@@ -23,28 +23,21 @@ print('\n1) Creación de una lista')
 # - RECORDAR: que el índice inicia en 0
 # - RECORDAR: el último elemento tiene índice -1
 
-# => aplicando index
+# => 2.1) Index en Listas
 print('\n2.1) Index en Listas')
 
 
-
-# => aplicando slicing
-print('\n2.1) Slicing en Listas')
+# => 2.2) Slicing en Listas
+print('\n2.2) Slicing en Listas')
 # RECORDAR: [start , end , step]
 # - start => inclusivo
 # - end   => exclusivo
 # - step  => salto
 
 
-# aplicando salto
-
-
 
 #? 3) Concatenación en Listas
 print('\n3) Concatenación en Listas')
-
-
-# similar a la concatenación de strings
 
 
 
@@ -54,7 +47,6 @@ print('\n4) función len()')
 # - como vimos en los string nos devuelve el tamaño del mismo
 # - en listas devuelve el número de elementos de la lista
 
-s
 
 
 #? 5) Las listas son MUTABLES
@@ -69,11 +61,8 @@ print('\n5) Las listas son MUTABLES')
 # => Mutabilidad de Listas
 
 
-
 #? 6) Podemos definirlas en varias líneas de código
 print('\n6) Podemos definirlas en varias líneas de código')
-
-# => ej: lista de estudiantes
 
 
 
@@ -83,31 +72,10 @@ print('\n7) .append() => añadir un elemento al final de la lista')
 # - veremos a profundidad luego el tema de colecciones y listas
 
 
-
-
 #? 8) Reasignación con Slicing
 print('\n8) Reasignación con Slicing')
-
-
-
-# => ¿qué pasa si mandamos MENOS elementos?
-
-
-# => ¿qué pasa si mandamos MÁS elementos?
-
-
-# => ¿si lo hacemos con el index?
-
 
 
 #? 9) Listas Anidadas
 print('\n9) Listas Anidadas')
 # - como vimos anteriormente podemos almacenar listas dentro de listas
-
-# => Creación de una lista anidada
-
-
-# => Accediendo a los elementos
-
-
-# => Acceso con doble índice => doble corchete

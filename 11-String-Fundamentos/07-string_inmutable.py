@@ -6,6 +6,7 @@
 # - no podemos modificar alguno de sus caracteres
 # ===================================================
 
+
 #? 1) Error al tratar de modificar un índice del string
 
 cadena_1 = 'sebas'
@@ -19,7 +20,3 @@ cadena_1 = 'sebas'
 # - de poder dar solución a un problema
 # - en este caso utilizamos la REASIGNACIÓN
 # - como una alternativa
-
-
-
-

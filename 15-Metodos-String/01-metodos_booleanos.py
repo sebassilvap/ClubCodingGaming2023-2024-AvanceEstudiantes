@@ -21,46 +21,36 @@ Método        |  Descripción
 # ================================================================================
 
 #? 1) .isalpha()
-
 print('\n1) .isalpha()')
-
 
 
 #? 2) .isalnum()
 print('\n2) .isalnum()')
 
 
-
 #? 3) .isdigit()
 print('\n3) .isdigit()')
-
 
 
 #? 4) .islower()
 print('\n4) .islower()')
 
 
-
 #? 5) .isupper()
 print('\n5) .isupper()')
-
 
 
 #? 6) .istitle()
 print('\n6) .istitle()')
 
 
-
 #? 7) .startswith()
 print('\n7) .startswith()')
-
 
 
 #? 8) .endswith()
 print('\n8) .endswith()')
 
 
-
 #? 9) .isspace()
 print('\n9) .isspace()')
-

@@ -11,21 +11,9 @@
 print('\n1) round()')
 
 
-
-# => aplicando round()
-
-
-
 #? 2) abs() => valor absoluto de un número
 print('\n2) abs()')
 
 
-# => aplicando abs()
-
-
-
 #? 3) sum() => devuelve la suma de una lista
 print('\n3) sum()')
-
-
-# => existe un problema con esta función:

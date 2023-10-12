@@ -6,12 +6,14 @@
 # ==========================================================
 
 #? 1) Multiplicación básica de strings
-
+print('\n1) Multiplicación básica de strings')
 
 # => no importa el orden
 
 
 #? 2) Ejemplo práctico 1 => incluir espacios
+print('\n2) Ejemplo práctico 1 => incluir espacios')
 
 
 #? 3) Ejemplo práctico 2 => espacios y secuencias
+print('\n3) Ejemplo práctico 2 => espacios y secuencias')

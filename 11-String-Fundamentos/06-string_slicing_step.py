@@ -10,6 +10,7 @@
 # =====================================================
 
 #? 1) REPASO: Substring con índices positivos
+print('\n1) REPASO: Substring con índices positivos')
 
 cadena = 'superPalabraGrande'
 #(+)      012345678901234567
@@ -19,29 +20,21 @@ cadena = 'superPalabraGrande'
 
 
 #? 2) REPASO: Substring omitiendo índices redundantes
+print('\n2) REPASO: Substring omitiendo índices redundantes')
 
 
-
-
-#? 3) Aplicando salto (step) 
-
+#? 3) Aplicando salto (step)
+print('\n3) Aplicando salto (step)')
 
 
 #? 4) Salto Negativo => Revertir un String
-
+print('\n4) Salto Negativo => Revertir un String')
 
 
 #? 5) Ejercicio: string & substring / normal & reverso
+print('\n5) Ejercicio: string & substring / normal & reverso')
+
 cadena = 'superPalabraGrande'
-
-
-# cadena revertida
-
-
-# 3 substring orden normal
-
-
-# 3 substring orden reverso
 
 
 #! Corrección

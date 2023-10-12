@@ -2,7 +2,7 @@
 # librería / módulo math de python
 
 # - no necesitamos instalarla con pip
-#! - pip => asistente de instalación de librerías y módulos en Python!
+#! - pip => asistente de instalación de librerías y módulos en Python
 # - ya viene por defecto al momento de instalar python
 # - pero debemos importarla para poder usarla
 # =======================================================
@@ -12,13 +12,10 @@ print('\n1) Importación del módulo')
 # - las importaciones siempre son la 1era línea de código
 
 
-
 #? 2) Constantes Matemáticas
 print('\n2) Constantes Matemáticas')
 # - math.pi
 # - math.e
-
-
 
 
 #? 3) Representación Numérica
@@ -30,12 +27,6 @@ print('\n3.1) math.ceil() & math.floor()')
 # - math.floor() => devuelve el entero inferior
 
 
-
-print('\nRecordar round()')
-# => round devuelve el inmediato superior
-
-
-
 ## 3.2) math.fabs()
 print('\n3.2) math.fabs()')
 # - igual que abs()
@@ -43,13 +34,10 @@ print('\n3.2) math.fabs()')
 #! - pero lo devuelve como float
 
 
-
-
 #? 4) Mínimo Común Múltiplo & Máximo Común Divisor
 print('\n4) Mínimo Común Múltiplo & Máximo Común Divisor')
 # - math.lcm() => mínimo común múltiplo
 # - math.gcd() => máximo común divisor
-
 
 
 #? 5) Raíces y Potencia
@@ -62,7 +50,6 @@ print('\n5.1) math.sqrt()')
 # - IMPORTANTE: devuelve un flotante
 
 
-
 ## 5.2) math.cbrt()
 print('\n5.2) math.cbrt()')
 # - raíz cúbica
@@ -70,15 +57,8 @@ print('\n5.2) math.cbrt()')
 # - IMPORTANTE: devuelve un flotante
 
 
-
 ## 5.3) Potencia
 print('\n5.3) Potencia')
-
-
-# operador interno **
-
-
-# math.pow()
 
 
 ## 5.4) Truco para raíces
@@ -105,14 +85,10 @@ print('\n6) Logaritmos')
 # ln 8 => e ** x = 8 => a qué número debo elevar constante e para que me de 8
 
 
-
-
 #? 7) Exponencial e
 print('\n7) Exponencial e')
 # - math.exp()
 # - constante e ** valor = 2.71.. ^ x
-
-
 
 
 #? 8) Conversión de Ángulos
@@ -131,13 +107,6 @@ print('\n8) Conversión de Ángulos')
 
 #* cuando se trata de una constante
 #* es una buena práctica poner el nombre de la variable en mayúsculas
-
-
-print('\nDe radianes a grados:')
-
-
-print('\nDe grados a radianes:')
-
 
 
 #? 9) Funciones Trigonométricas
@@ -170,7 +139,6 @@ print('\n10) Truncate => Eliminando parte decimal')
 # - math.trunc(x)
 # - no redondea
 # - sólo elimina todos los decimales y el punto
-
 
 
 

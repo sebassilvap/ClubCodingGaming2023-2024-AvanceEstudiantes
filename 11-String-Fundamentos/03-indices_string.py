@@ -11,27 +11,19 @@
 # - y el índice -1 se refiere a la última posición
 # ===========================================================================
 
+
 #? 1) Recorrer string con índices POSITIVOS
-
-l   =  'juan'
-# (+)   0123
-# (-)   4321
-
-print(l)
-
-print('(1) Índices (+)\n-----------')
+print('\n1) Recorrer string con índices POSITIVOS')
 
 
 #? 2) Recorrer string con índices NEGATIVOS
-
-print('\n(2) Índices (-)\n-----------')
+print('\n2) Recorrer string con índices NEGATIVOS')
 
 
 #? 3) Utilizando cada índice
-
-print('\n(3) Utilizando cada índice')
+print('\n3) Utilizando cada índice')
 
 
 #? 4) Intentando acceder a un string que no existe
+print('\n4) Intentando acceder a un string que no existe')
 # - Index Error => cuando intento acceder a un índice fuera de los límites
-

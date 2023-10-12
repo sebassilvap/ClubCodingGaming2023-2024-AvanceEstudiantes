@@ -12,6 +12,7 @@
 
 
 #? 1) Slicing con índices positivos
+print('\n1) Slicing con índices positivos')
 
 palabra = 'programa'
 #(+)       01234567
@@ -20,19 +21,20 @@ palabra = 'programa'
 
 
 #? 2) Slicing con índices negativos
+print('\n2) Slicing con índices negativos')
 # - Recordar que aunque sea índice negativo
 # - El 'END' => sigue siendo exclusivo
 
 
-
 #? 3) El Slicing no tiene Index Error
+print('\n3) El Slicing no tiene Index Error')
 
 palabra = 'Python'
 #(+)       012345
 
 
-
 #? 4) Pequeño adelanto => casting de variables | casting a número entero
+print('\n4) Pequeño adelanto => casting de variables | casting a número entero')
 
 
 
@@ -49,9 +51,8 @@ palabra = 'Python'
 # - esta nos devuelve como entero la longitud de una cadena
 
 
-
-
-#? 4) Dividir cualquier palabra a la mitad => slicing + len()
+#? 5) Dividir cualquier palabra a la mitad => slicing + len()
+print('\n5) Dividir cualquier palabra a la mitad => slicing + len()')
 
 palabra_1 = 'programa'
 #(+)         01234567
@@ -61,18 +62,7 @@ palabra_2 = 'sol'
 
 
 
-# ==> pero en lugar de crear variables podemos poner esto directamente !!
-
-
 # - obviamente la división de una palabra funciona al 100%
 # - si el tamaño (número de caracteres) del string es PAR
 # - en el segundo ejemplo como son 3 letras
 # - divide en 1 y 2 letras respectivamente
-
-
-
-
-
-
-
-
