@@ -15,8 +15,10 @@
 print('\n1) Ejemplo básico de input() y tipo de dato')
 
 
+
 #? 2) Guardando el valor de input
 print('\n2) Guardando el valor de input')
+
 
 
 #? 3) Si deseo ingresar un número => casting

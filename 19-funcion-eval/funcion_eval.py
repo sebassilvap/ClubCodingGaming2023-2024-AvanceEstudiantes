@@ -11,8 +11,10 @@
 print('\n1) Siempre y cuando la expresión sea válida, no importa el formato')
 
 
+
 #? 2) Todas las reglas aritméticas se aplican
 print('\n2) Todas las reglas aritméticas se aplican')
+
 
 
 #? 3) Interacción de eval + input

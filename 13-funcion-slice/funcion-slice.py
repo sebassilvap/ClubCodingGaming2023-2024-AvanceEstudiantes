@@ -28,5 +28,12 @@ website_2 = 'https://www.google.com'
 website_3 = 'https://www.twitter.com'
 
 
+
 #? 2) Utilizando también step
 print('\n2) Utilizando también step')
+
+#(+)         0123456789012
+#(-)                             4321
+website_1 = 'https://www.facebook.com'
+website_2 = 'https://www.google.com'
+website_3 = 'https://www.twitter.com'

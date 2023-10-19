@@ -7,9 +7,11 @@
 # - pero debemos importarla para poder usarla
 # =======================================================
 
+
 #? 1) Importación del módulo
 print('\n1) Importación del módulo')
 # - las importaciones siempre son la 1era línea de código
+
 
 
 #? 2) Constantes Matemáticas
@@ -18,20 +20,30 @@ print('\n2) Constantes Matemáticas')
 # - math.e
 
 
+
 #? 3) Representación Numérica
 print('\n3) Representación Numérica')
 
-## 3.1) math.ceil() & math.floor()
+# ------------------------------------------------
+# 3.1) math.ceil() & math.floor()
 print('\n3.1) math.ceil() & math.floor()')
 # - math.ceil()  => devuelve el entero superior
 # - math.floor() => devuelve el entero inferior
+# ------------------------------------------------
 
 
-## 3.2) math.fabs()
+
+print('\nRecordar round()')
+# => round devuelve el inmediato superior
+
+
+# --------------------------------
+# 3.2) math.fabs()
 print('\n3.2) math.fabs()')
 # - igual que abs()
 # - devuelve el valor absoluto
-#! - pero lo devuelve como float
+# ! pero lo devuelve como float
+# --------------------------------
 
 
 #? 4) Mínimo Común Múltiplo & Máximo Común Divisor
@@ -40,29 +52,47 @@ print('\n4) Mínimo Común Múltiplo & Máximo Común Divisor')
 # - math.gcd() => máximo común divisor
 
 
+
 #? 5) Raíces y Potencia
 print('\n5) Raíces y Potencia')
 
-## 5.1) math.sqrt()
+# -------------------------------------
+# 5.1) math.sqrt()
 print('\n5.1) math.sqrt()')
 # - raíz cuadrada
 # - sqrt = square root
 # - IMPORTANTE: devuelve un flotante
+# -------------------------------------
 
 
-## 5.2) math.cbrt()
+
+# ---------------------------------------
+# 5.2) math.cbrt()
 print('\n5.2) math.cbrt()')
 # - raíz cúbica
 # - cbrt = cubic root
 # - IMPORTANTE: devuelve un flotante
+# ---------------------------------------
 
 
-## 5.3) Potencia
+
+# -----------------------
+# 5.3) Potencia
 print('\n5.3) Potencia')
+# -----------------------
 
 
-## 5.4) Truco para raíces
+# operador interno **
+
+
+# math.pow()
+
+
+# -----------------------------------------
+# 5.4) Truco para raíces
+print('\n5.4) Truco para raíces')
 # math.sqrt(25) = 25 ** 0.5 = 25 ** (1/2)
+# -----------------------------------------
 
 # raíz cuadrada
 
@@ -85,10 +115,12 @@ print('\n6) Logaritmos')
 # ln 8 => e ** x = 8 => a qué número debo elevar constante e para que me de 8
 
 
+
 #? 7) Exponencial e
 print('\n7) Exponencial e')
 # - math.exp()
 # - constante e ** valor = 2.71.. ^ x
+
 
 
 #? 8) Conversión de Ángulos
@@ -107,6 +139,14 @@ print('\n8) Conversión de Ángulos')
 
 #* cuando se trata de una constante
 #* es una buena práctica poner el nombre de la variable en mayúsculas
+
+
+
+print('\nDe radianes a grados:')
+
+
+print('\nDe grados a radianes:')
+
 
 
 #? 9) Funciones Trigonométricas

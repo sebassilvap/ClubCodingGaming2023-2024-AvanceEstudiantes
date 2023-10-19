@@ -16,3 +16,28 @@ Operador |  Definición
 '''
 # =====================================
 
+num_1 = 5
+num_2 = 3
+
+
+print('\n1) Mayor que (>)')
+
+
+
+print('\n2) Menor que (<)')
+
+
+
+print('\n3) Mayor o Igual que (>=)')
+
+
+
+print('\n4) Menor o Igual que (<=)')
+
+
+
+print('\n5) Igual que (==)')
+
+
+
+print('\n6) Distinto de (!=)')

@@ -6,29 +6,44 @@
 # - Transforman al string para un propósito específico
 # =======================================================
 
+
 #? 1) Para cambiar el tipo
 print('\n1) Para cambiar el tipo')
-# .capitalize() => Primera letra con mayúscula
-# .title()      => Primera letra de cada palabra con mayúscula
-# .upper()      => Todo en mayúsculas
-# .lower()      => Todo en minúsculas
-# .swapcase()   => Invierte el case del texto
+#   .capitalize() => Primera letra con mayúscula
+#   .title()      => Primera letra de cada palabra con mayúscula
+#   .upper()      => Todo en mayúsculas
+#   .lower()      => Todo en minúsculas
+#   .swapcase()   => Invierte el case del texto
+
+var_1 = 'Me gusta APRENDER PythoN.'
 
 
+# => NO afecta la variable original!
+var_1 = 'Me gusta APRENDER PythoN.'
 
+
+# -----------------------------------------------------------------------
 #! NOTA IMPORTANTE
 # - veremos más luego que algunos métodos MODIFICAN la variable original
 # - en este caso los métodos de string no lo hacen
 # - para ver su funcionamiento tenemos:
 # - que hacer un print
 # - guardarlos en otra variable
+# -----------------------------------------------------------------------
+
+# => guardando en una variable
+# var_1_upper
+
 
 
 #? 2) Para justificación del texto
 print('\n2) Para justificación del texto')
-# .center(x) => Justificación al centro en x espacios
-# .ljust(x) => Justificación a la izquierda en x espacios
-# .rjust(x) => Justificación a la derecha en x espacios
+#   .center(x) => Justificación al centro en x espacios
+#   .ljust(x) => Justificación a la izquierda en x espacios
+#   .rjust(x) => Justificación a la derecha en x espacios
+
+var_1 = 'python'
+#        012345
 
 
 # .center(x)
@@ -52,6 +67,7 @@ var_1 = 'nunca digas nunca en esta vida.'
 # .count()
 
 
+
 #? 4) Búsqueda por caracter => Retorno de índice CON ERROR
 print('\n4) Búsqueda por caracter => Retorno de índice CON ERROR')
 # .index(substring, start, end) => búsqueda de un caracter de izquierda a derecha
@@ -69,10 +85,15 @@ print('\nUtilizando .index()')
 print('\nUtilizando .rindex()')
 
 
+var_1 = 'Xuna palabraX que se forma conX'
+
+
+
+
 #? 5) Búsqueda por caracter => Retorno de índice SIN ERROR
 print('\n5) Búsqueda por caracter => Retorno de índice SIN ERROR')
-# find(substring, start, end)
-# rfind(substring, start, end)
+#   .find(substring, start, end)
+#   .rfind(substring, start, end)
 
 # => básicamente lo mismo que index
 # => pero no devuelve error si no encuentra
@@ -86,22 +107,30 @@ var_1 = 'contextualización'
 
 
 # .rfind()
+
 var_1 = 'Xuna palabraX que se forma conX'
 
 
 
 #? 6) Eliminar espaciados y caracteres
 print('\n6) Eliminar espaciados y caracteres')
-# .strip()  => eliminación a ambos lados
-# .lstrip() => eliminación a la izquierda
-# .rstrip() => eliminación a la derecha
+#   .strip()  => eliminación a ambos lados
+#   .lstrip() => eliminación a la izquierda
+#   .rstrip() => eliminación a la derecha
+
 # => por defecto sin argumento elimina todo tipo de espaciado
 
 
 # .strip()
 
 
+
+
 # .lstrip() y .rstrip()
+print('\nUtilización de .lstrip() & .rstrip()')
+
+var_1 = '**********hola****'
+
 
 
 #? 7) .join()
@@ -110,17 +139,16 @@ print('\n7) .join()')
 # - Con el valor de otra cadena
 
 
+
 #? 8) .split()
 print('\n8) .split()')
 # - transforma una cadena en una lista
-#! TEMA Listas: Ya lo veremos a profundidad luego
+# ! TEMA Listas: Ya lo veremos a profundidad luego
 # - básicamente una lista es una colección de datos
 # - cuando no se da el parámetro por defecto separa por espacios
 
+var_1 = 'Python Java C++ Javascript'
 
-
-#! Ya veremos luego => len() también se puede aplicar en listas
-# - en este caso len devuelve el número de elementos en la lista
 
 
 #? 9) .splitlines()
@@ -131,8 +159,6 @@ print('\n9) .splitlines()')
 texto = 'Yo programo en Python\nEl programa en Java\nElla en C++'
 
 
-# - Se acopla de mejor manera a un string multilínea
-
 poema = '''
 En una noche de verano
 Yo la conocí
@@ -141,11 +167,12 @@ Siempre la recordaré
 '''
 
 
-#? 9) .expandtabs()
-print('\n9) .expandtabs()')
+#? 10) .expandtabs()
+print('\n10) .expandtabs()')
 # - como su nombre lo indica
 # - sirve para incrementar el tamaño de un tab
 # - dentro de un string
+
 
 
 #? 10) .replace()
@@ -153,6 +180,7 @@ print('\n10) .replace()')
 #! UNO DE LOS MÁS IMPORTANTES
 # - para reemplazar un caracter o subcadena
 # - dentro de una cadena
+
 
 # => reemplazando un caracter
 

@@ -10,27 +10,60 @@
 letra_1 = 'c'
 letra_2 = 'x'
 
+
 #? 1) Comparación entre 2 letras distintas
 print('\n1) Comparación entre 2 letras distintas')
+
 print('\nComparación entre',letra_1,'y',letra_2,':')
+
+
 
 
 
 #? 2) Comparación entre 2 letras iguales
 print('\n2) Comparación entre 2 letras iguales')
+
 print('\nComparación entre',letra_1,'y',letra_1,':')
+
+
 
 
 
 #? 3) Comparación entre 2 cadenas
 print('\n3) Comparación entre 2 cadenas')
 
+c_1 = 'AA'
+c_2 = 'AAA'
+
+print('\nComparación entre',c_1,'y',c_2,':')
+
+
+c_1 = 'amigo'
+c_2 = 'amiga'
+
+print('\nComparación entre',c_1,'y',c_2,':')
+
+
+c_1 = 'Z'
+c_2 = 'AAAAAAAAA'
+
+print('\nComparación entre',c_1,'y',c_2,':')
+
+
 
 #? 4) Comparación entre 2 símbolos
 print('\n4) Comparación entre 2 símbolos')
 
+c_1 = '@'
+c_2 = '%'
 
+print('\nComparación entre',c_1,'y',c_2,':')
+
+
+
+# -----------------------------------------------------------------
 # => ¿Por qué?
 # código hexadecimal de caracteres: https://www.ascii-code.com/
 # @ ===> DEC = 64
 # % ===> DEC = 37
+# -----------------------------------------------------------------
