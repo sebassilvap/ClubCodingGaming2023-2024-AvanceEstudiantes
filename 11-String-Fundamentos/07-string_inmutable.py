@@ -11,7 +11,15 @@
 print('\n1) Error al tratar de modificar un índice del string')
 
 cadena_1 = 'sebas'
-#(+)        01234 
+#(+)        01234
+
+print(cadena_1)
+print(cadena_1[0])
+
+#print( hex(id(cadena_1)) )
+
+#cadena_1[0] = 'X'
+#! TypeError: 'str' object does not support item assignment
 
 
 
@@ -22,3 +30,8 @@ print('\n2) Una solución a este problema')
 # - de poder dar solución a un problema
 # - en este caso utilizamos la REASIGNACIÓN
 # - como una alternativa
+
+cadena_1 = 'X' + cadena_1[1:]
+print(cadena_1)
+
+#print( hex(id(cadena_1)) )
