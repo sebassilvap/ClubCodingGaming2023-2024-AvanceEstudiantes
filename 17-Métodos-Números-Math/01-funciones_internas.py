@@ -13,6 +13,11 @@ print('\n1) round()')
 
 constante_pi = 3.14159
 
+print(constante_pi)
+round(constante_pi)
+print(constante_pi)
+print( round(constante_pi) )
+
 # => aplicando round()
 
 num_1 = 3.2
@@ -22,6 +27,13 @@ num_4 = 3.8
 num_5 = 3.999999
 
 # => aplicando round()
+
+print('\naplicando round\n')
+print( num_1, '=>', round(num_1) )
+print( num_2, '=>', round(num_2) )
+print( num_3, '=>', round(num_3) )
+print( num_4, '=>', round(num_4) )
+print( num_5, '=>', round(num_5) )
 
 
 
@@ -35,20 +47,49 @@ num_4 = 4.96
 
 # => aplicando abs()
 
+print()
+print( num_1, '=>', abs(num_1) )
+print( num_2, '=>', abs(num_2) )
+print( num_3, '=>', abs(num_3) )
+print( num_4, '=>', abs(num_4) )
+
+
 
 
 #? 3) sum() => devuelve la suma de una lista
 print('\n3) sum()')
 
+lista_1 = [10,20,30,40]
+print(lista_1, type(lista_1))
+print( sum(lista_1) )
 
 # => existe un problema con esta función:
+lista_2 = [0.9999999, 1, 2, 3]
+#print( sum(lista_2) ) # 6.999999900000001
 
 
 
 #? 4) max() => valor máximo de una lista de números
 print('\n4) max() => valor máximo de una lista de números')
 
+lista_1 = [50, 10.2, 20, 3.5, 100.5, 80.9]
+print(lista_1, sum(lista_1), max(lista_1))
+#[50, 10.2, 20, 3.5, 100.5, 80.9] 265.1 100.5
+
+lista_1 = [50, 10.2, 20, 3.5, 100.5, 80.9, 'a']
+#print(lista_1, sum(lista_1), max(lista_1))
+#! TypeError: unsupported operand type(s) for +: 'float' and 'str'
+
 
 
 #? 5) min() => valor mínimo de una lista de números
 print('\n4) min() => valor máximo de una lista de números')
+
+lista_1 = [50, 10.2, 20, 3.5, 100.5, 80.9]
+print( lista_1 ) # [50, 10.2, 20, 3.5, 100.5, 80.9]
+print( sum(lista_1) ) # 265.1
+print( max(lista_1) ) # 100.5
+print( min(lista_1) ) # 3.5
+
+lista_1 = [50, 10.2, 20, 3.5, 100.5, 80.9, 1]
+print( min(lista_1) ) # 1
