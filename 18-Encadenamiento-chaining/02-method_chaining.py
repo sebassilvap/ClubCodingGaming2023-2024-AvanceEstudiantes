@@ -13,6 +13,13 @@
 #? 1) Sin usar method-chaining
 print('\n1) Sin usar method-chaining\n')
 
+"""
+nombre = input( 'Su nombre y apellido: ' )
+nombre = nombre.strip(' ') # 1
+nombre = nombre.title() # 2
+
+print('Su nombre es: ', nombre)
+"""
 
 
 
@@ -23,3 +30,5 @@ print('\n2) CON method chaining\n')
 # ejecución SECUENCIAL de izquierda a derecha
 
 # => 1 línea de código
+
+print( input('Su nombre y apellido: ').strip(' ').title() ) # 1 línea
