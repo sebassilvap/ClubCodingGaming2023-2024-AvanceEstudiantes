@@ -30,8 +30,19 @@ es_estudiante = True
 
 # => BUENA PRÁCTICA
 
+if es_estudiante:
+    print('SI, es estudiante!')
+else:
+    print('No, no es estudiante!')
+# end if
+
 
 # => MALA PRÁCTICA
+if es_estudiante == True:
+    print('SI, es estudiante!')
+else:
+    print('No, no es estudiante!')
+# end if
 
 
 # - al final tendremos el mismo resultado
@@ -49,16 +60,34 @@ lista = [1,2,3,4,5]
 x = 3
 
 #  => BUENA PRÁCTICA
+if x in lista:
+    print('x está en la lista!!')
+else:
+    print('x NO está en la lista')
+# end if
 
+#* x está en la lista!!
 
 
 #  => MALA PRÁCTICA, PERO RESULTADO CORRECTO
+if (x in lista) == True:
+    print('x está en la lista!!')
+else:
+    print('x NO está en la lista')
+# end if
 
+#* x está en la lista!!
 
 
 #! => MALA PRÁCTICA, Y RESULTADO INCORRECTO!
 
+if x in lista == True:
+    print('x está en la lista!!')
+else:
+    print('x NO está en la lista')
+# end if
 
+#! x NO está en la lista
 
 # ----------------------------------------------------------
 # RECORDAR
@@ -71,6 +100,14 @@ x = 3
 
 #? 3) Con valores no booleanos no hay problema
 print('\n3) Con valores no booleanos no hay problema')
+
+a = 10
+
+if a == 10: #* OK !!
+    print('Hey el número es 10')
+else:
+    print('Diferente de 10 !!')
+# end if
 
 
 # -------------------------------------

@@ -16,6 +16,7 @@ print('\n1) Utilizando varios if - CASO ACEPTABLE')
 # - en este caso el resultado va a ser el mismo
 # - pero el código es más elegante con una buena estructura
 
+"""
 comando_usuario = input('Ingrese comando: ')
 
 if comando_usuario == 'atacar':
@@ -24,11 +25,12 @@ if comando_usuario == 'esquivar':
     print('Player 1 - Esquiva')
 if comando_usuario == 'salir':
     print('Fin del Juego')
-
+"""
+    
 # - muchos programadores a veces plantean el código de esta manera
 # - no es que esté mal / o haya error
 # - en este caso puede haber error si el comando es otra cosa
-#! debemos siempre adelantarnos a los errores
+# ! debemos siempre adelantarnos a los errores
 # - así sean casi imposibles de que ocurran
 # - a continuación se muestra una versión más elegante
 
@@ -37,6 +39,21 @@ if comando_usuario == 'salir':
 # - de esta manera estamos reconociendo cualquiera de los 3 comandos
 # - sin importar mayúsculas, minúsculas y espacios
 
+comando_usuario = input('Ingrese comando: ')
+
+comando_usuario = comando_usuario.lower().strip(' ')
+print(comando_usuario)
+
+# => diseñar mi estructura condicional
+
+if comando_usuario == 'atacar':
+    print('PLAYER 1 - Ataca!')
+elif comando_usuario == 'esquivar':
+    print('PLAYER 1 - Esquiva!')
+elif comando_usuario == 'salir' or comando_usuario == 's': #! or => cualquiera de las 2 opciones
+    print('GAME OVER')
+else:
+    print('UPS! - Comando Incorrecto :(')
 
 
 # ====================================================================
@@ -44,14 +61,36 @@ if comando_usuario == 'salir':
 #? 2) Utilizando varios if - CASO ERRÓNEO
 print('\n2) Utilizando varios if - CASO ERRÓNEO')
 
+poder = 45
+
 # (2.1) versión errónea
 print('\n(2.1) versión errónea\n')
+
+if poder > 0:
+    print('no ataque')
+if poder > 10:
+    print('ataque básico')
+if poder > 20:
+    print('ataque medio')
+if poder > 30:
+    print('súper ataque!')
 
 # - en este caso, varios if me da un resultado erróneo, todas las condiciones se cumplen
 
 
 # (2.2) versión no tan óptima - rango simple
 print('\n(2.2) versión no tan óptima - rango simple\n')
+
+poder = 45
+
+if poder > 30:
+    print('súper ataque')
+elif poder > 20:
+    print('ataque medio')
+elif poder > 10:
+    print('ataque básico')
+else:
+    print('no ataque')
 
 
     
@@ -62,8 +101,26 @@ print('\n(2.2) versión no tan óptima - rango simple\n')
 # - siempre tratar de cubrir todas las posibilidades existentes
 
 
+# * RECORDAR SIEMPRE !!!!!!!
 # (2.3) versión óptima - OK
 print('\n(2.3) versión óptima - OK\n')
+
+#! and => me sirve para interpretar rangos
+# [5, 7]  =>  x >= 5 and x <= 7
+# [5, 7[  =>  x >= 5 and x < 7
+
+poder = 45
+
+if poder > 0 and poder < 10: # ]0, 10[
+    print('Player no puede atacar! :(')
+elif poder >= 10 and poder < 20: # [10, 20[
+    print('Player puede hacer ataque básico!')
+elif poder >= 20 and poder < 30: # [20, 30[
+    print('Player puede hacer ataque MEDIO!')
+elif poder >= 30: # [30, inf+]
+    print('Player puede hacer SUPERATAQUE')
+else:
+    print('GAME OVER')
 
     
     

@@ -10,3 +10,16 @@
 # - por ejemplo para el caso del if
 # ============================================================================
 
+nivel_gasolina = 60
+
+if nivel_gasolina > 80 and nivel_gasolina <= 100:
+    print('NIVEL ÓPTIMO')
+elif nivel_gasolina > 30 and nivel_gasolina <= 80:
+    print('NIVEL INTERMEDIO')
+elif nivel_gasolina > 0 and nivel_gasolina <= 30:
+    print('NIVEL BAJO - PELIGRO !!!')
+else:
+    print('SIN GASOLINA')
+# end if
+
+print('El nivel de gasolina es =', nivel_gasolina, '%')

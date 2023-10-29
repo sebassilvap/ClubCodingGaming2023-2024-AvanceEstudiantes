@@ -44,9 +44,18 @@ n1 = 3
 # 1.1) elemento dentro de una lista
 print('\n1.1) elemento dentro de una lista\n')
 # ----------------------------------------------
+print( n1 in lista_1 ) # True
+print( n1 in lista_2 ) # False
 
+print( n1 not in lista_1 ) # False
+print( n1 not in lista_2 ) # True
 
+#* Traducción:
+# "¿Se encuentra n1 dentro la lista_1?"
+# "¿Se encuentra n1 dentro la lista_2?"
 
+# "¿Es verdad que n1 NO ESTÁ en la lista_1?"
+# "¿Es verdad que n1 NO ESTÁ en la lista_2?"
 
 # ----------------------------------------------------
 # 1.2) Otra alternativa: not + paréntesis
@@ -55,6 +64,16 @@ print('\n1.2) Otra alternativa: not + paréntesis\n')
 # - otra manera de usar el not
 # - pero más lógica y sentido tiene el "not in"
 
+#print( n1 not in lista_1 ) # False
+#print( n1 not in lista_2 ) # True
+
+print( not(n1 in lista_1) ) # False
+print( not(n1 in lista_2) ) # True
+
+
+#* Traducción:
+# "¿No es CIERTO que n1 se encuentra en lista_1? => Falso porque si es CIERTO"
+# "¿No es CIERTO que n1 se encuentra en lista_2? => Verdadero porque no es CIERTO"
 
 
 # ---------------------------------------------------------
@@ -66,6 +85,18 @@ print('\n1.3) not al inicio sin paréntesis => puede confundir\n')
 # - y esto puede tender a errores luego
 # ! No recomendable
 
+print( not(n1 in lista_1) ) # False #*
+print( not(n1 in lista_2) ) # True #*
+print('-------')
+print( not n1 in lista_1 ) # False #!
+print( not n1 in lista_2 ) # True #!
+
+#* Traducción:
+# "¿No es CIERTO que n1 se encuentra en lista_1? => Falso porque si es CIERTO"
+# "¿No es CIERTO que n1 se encuentra en lista_2? => Verdadero porque no es CIERTO"
+
+# "¿No está n1 dentro de lista_1?" => Falso porque si está
+# "¿No está n1 dentro de lista_2?" => Verdadero porque no está
 
 
 # -------------------------------------------------
@@ -77,12 +108,39 @@ print('\n1.4) Manera redundante, no recomendable\n')
 # - caso contrario nos da una respuesta equivocada
 # ! No recomendable
 
+#print( n1 in lista_1 ) # True  #* OK
+#print( n1 in lista_2 ) # False #* OK
 
+print( (n1 in lista_1) == True ) # True  #! X
+print( (n1 in lista_2) == True ) # False #! X
 
+print( (n1 in lista_1) == False ) # False #! X
+print( (n1 in lista_2) == False ) # True  #! X
+
+#* Traducción:
+# "¿Se encuentra n1 dentro la lista_1?"
+# "¿Se encuentra n1 dentro la lista_2?"
+
+# "¿Es verdad que n1 NO ESTÁ en la lista_1?"
+# "¿Es verdad que n1 NO ESTÁ en la lista_2?"
 
 # ! ERROR
 
+print( (n1 in lista_2) == False ) # True  #! X
+print( n1 in lista_2 == False ) # False #! ERROR de interpretación
 
+# * ¿Qué pasa aquí?
+
+'''
+n1 in lista_2 == False
+
+=> se opera como una COMPARACIÓN EN CADENA
+es decir:
+
+n1 in lista_2 == False  ---> (n1 in lista_2) and (lista_2 == False)
+n1 in lista_2 == False  --->  False and False
+n1 in lista_2 == False  --->  False
+'''
 
 # -----------------------------------------------------------------------
 # 1.5) Análizar de manera equivocada que una lista está vacía
@@ -91,8 +149,19 @@ print('\n1.5) Análizar de manera equivocada que una lista está vacía\n')
 # - cuando comparamos una lista directamente a False o True
 # - lo que hacemos aquí es comparar el valor de un elemento y otro
 # - de una manera literal
-# - daría False por el simple hecho que una lsita no es igual a un booleano
+# - daría False por el simple hecho que una lista no es igual a un booleano
 # ! Uso ERRÓNEO de la comparación
+
+lista_1 = [1,2,3,4,5]
+lista_2 = [1,8,6,5,7]
+lista_3 = []
+
+n1 = 3
+
+print( lista_1 == False ) # False
+print( lista_3 == False ) # False
+
+#! por favor no hacer esto !!
 
 
 
@@ -107,22 +176,95 @@ print('\n1.6) Correción del uso de la comparación\n')
 # - una lista vacía tiene un VALOR BOOLEANO de False
 # * RECORDAR: valor booleano de las variables !
 
+print( bool(lista_1) == False ) # False
+print( bool(lista_3) == False ) # True
+
+#* Traducción:
+# "¿El valor booleano de lista_1 es False?"
+# "¿El valor booleano de lista_3 es False?"
+
+print( bool(lista_1) ) # True
+print( bool(lista_3) ) # False
+
 
 
 #? 2) Ejemplo: Analizar la temperatura / clima
 print('\n2) Ejemplo: Analizar la temperatura / clima')
 
+temperatura = 15
+clima = ''
+
+if not (temperatura < 10 or temperatura > 30):
+    clima = 'Buen Clima'
+else:
+    clima = 'Mal Clima'
+# end if
+
+print(clima)
+
+#* => Traducción:
+
+'''
+Si la temperatura NO es menor a 10
+o mayor a 30 grados,
+tenemos un buen clima,
+caso contrario, tenemos un mal clima.
+'''
 
 
 #? 3) Ejemplo: Control Básico de Asistencia
 print('\n3) Ejemplo: Control Básico de Asistencia')
 
+estudiante_1 = 'Fernando'
+estudiante_2 = 'Francisco'
+estudiante_3 = 'Sebastián'
 
+clase_geometría = ['Andrés', 'Sebastián', 'Carlos', 'Ximena']
+clase_ingles = ['Fernando', 'Tania', 'Eduardo', 'Carla', 'Sebastián']
+
+estudiante = estudiante_1 # El estudiante asiste al menos a 1 CLASE !!!
+estudiante = estudiante_2 # El estudiante no asiste a ninguna clase
+estudiante = estudiante_3 # El estudiante asiste al menos a 1 CLASE !!!
+
+if not(estudiante in clase_geometría or estudiante in clase_ingles):
+    print('El estudiante no asiste a ninguna clase')
+else:
+    print('El estudiante asiste al menos a 1 CLASE !!!')
+# end if
+
+#* => Traducción:
+
+'''
+Si el estudiante no está en la lista de la clase de geometría,
+o en la lista de la clase de inglés,
+entonces el estudiante no asiste a ninguna clase.
+Caso contrario, el estudiante está asistiendo al menos
+a 1 de las 2 clases.
+'''
 
 #? 4) Ejemplo: Análisis de notas sobre 20
 print('\n4) Ejemplo: Análisis de notas sobre 20')
 # - Básicamente si el promedio es de 15 para arriba, el estudiante aprueba
 # - si es de 14 para abajo, el estudiante reprueba
+
+nota_1 = 15
+nota_2 = 14
+nota_3 = 14
+
+if not( (nota_1 + nota_2 + nota_3)/3 >= 15 ):
+    print('El estudiante ha REPROBADO!!')
+else:
+    print('El estudiante ha PASADO !!!')
+# end if
+
+
+#* => Traducción:
+
+'''
+Si el promedio de las 3 notas del estudiante
+NO es mayor o igual a 15, entonces el estudiante reprueba.
+Caso contrario, el estudiante aprueba la materia!
+'''
 
 
 
@@ -131,6 +273,11 @@ print('\n5) Comprobar un elemento dentro de lista')
 # - veremos aquí maneras correctas e incorrectas
 # - de formular una expresión lógica
 
+var = 2
+
+l1 = [1,2,3]
+l2 = [10,11,12]
+
 
 # ----------------------------------------------
 # 5.1) Ejemplo # 1: Manera Correcta
@@ -138,6 +285,16 @@ print('\n5.1) Ejemplo # 1: Manera Correcta\n')
 # ----------------------------------------------
 # * MANERA CORRECTA !
 
+if var in l1 and var in l2:
+    print('Está en AMBAS listas!')
+else:
+    print('No está en AMBAS pero puede que esté en 1 o ninguna!')
+# end if
+
+# No está en AMBAS pero puede que esté en 1 o ninguna!
+
+#* Traducción
+# "Si var se encuentra en l1 Y en l2..."
 
 # ----------------------------------------------
 # 5.2) Ejemplo # 2: Manera Correcta
@@ -145,6 +302,16 @@ print('\n5.2) Ejemplo # 2: Manera Correcta\n')
 # ----------------------------------------------
 # * MANERA CORRECTA !
 
+if not(var in l1 and var in l2):
+    print('No está en AMBAS pero puede que esté en 1 o ninguna!')
+else:
+    print('En AMBAS listas')
+# end if
+
+#No está en AMBAS pero puede que esté en 1 o ninguna!
+
+#* Traducción
+# "Si NO ES CIERTO que var se encuentra en l1 y l2..."
 
 # ----------------------------------------------
 # 5.3) Ejemplo # 3: Manera Incorrecta
@@ -152,9 +319,32 @@ print('\n5.3) Ejemplo # 3: Manera Incorrecta\n')
 # ----------------------------------------------
 # ! MANERA INCORRECTA !
 
+if not(var in l1) and not(var in l2): #! no es lo mismo que => if not(var in l1 and var in l2):
+    print('No está en AMBAS pero puede que esté en 1 o ninguna!')
+else:
+    print('en AMBAS listas')
+# end if
+
+#! ¿QUÉ OCURRE AQUÍ?
+# var in l1 = True
+# not(var in l1) = False
+
+# var in l2 = False
+# not(var in l2) = True
+
+# False and True = False
+
+# => Ocurre que la lógica incorrecta se aplica!
+
 
 # ----------------------------------------------
 # 5.4) Ejemplo # 4: Manera Incorrecta
 print('\n5.4) Ejemplo # 4: Manera Incorrecta\n')
 # ----------------------------------------------
 # ! MANERA INCORRECTA !
+
+if var not in l1 and var not in l2:
+    print('No está en AMBAS pero puede que esté en 1 o ninguna!')
+else:
+    print('en AMBAS listas')
+# end if
