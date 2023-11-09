@@ -27,3 +27,48 @@ print('\n1) Ejemplo práctico')
 #   * 'ataque', 'Ataque', 'AtaQuE'
 # -------------------------------------------------
 
+print("""
+Bienvenidos al juego
+Opciones del Jugador:
+(1) Ataque
+(2) Defensa
+******************************
+""")
+
+
+# => manera tradicional
+comando = input('Ingrese su opción: ')
+comando = comando.strip(' ')
+comando = comando.lower()
+
+# => aplicando el chaining
+#comando = ( input('Ingrese su opción: ') ).strip().lower()
+
+#print(comando , len(comando)) # TEST
+
+
+# opción ataque
+if comando == '1' or comando == 'ataque' or comando.startswith('a'):
+    print('MODO ATAQUE')
+    print('(A) Golpe Directo')
+    print('(B) Hechizo')
+    print('*************************\n')
+    
+    opcion_ataque = input('Ingrese su opción: ')
+    opcion_ataque = opcion_ataque.strip(' ').lower()
+    
+    # => dentro del if anidado (2do if)
+    if opcion_ataque == 'golpe directo' or opcion_ataque == 'a' or opcion_ataque == 'g':
+        print('Ataque con Golpe Directo - 40 pts')
+    elif opcion_ataque == 'hechizo' or opcion_ataque == 'b' or opcion_ataque == 'h':
+        print('Ataque con Hechizo - 90 pts')
+    else:
+        print('Ups! - Comando Desconocido')
+
+# opción defensa
+elif comando == '2' or comando == 'defensa' or comando.startswith('d'): 
+    print('Jugador en modo de defensa - 50 pts')
+
+# opción incorrecta
+else:
+    print('Lo siento! - Opción Incorrecta :(')
