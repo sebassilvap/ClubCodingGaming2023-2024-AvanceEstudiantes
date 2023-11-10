@@ -48,25 +48,75 @@ for elemento in secuencia:
 #? 1) for + string
 print('\n1) for + string')
 
+cadena = 'Ecuador'
+
+print( cadena , type(cadena) ) # Ecuador <class 'str'>
+
+for letra in cadena:
+    print(letra)
+# end for
+
 
 
 #? 2) for + string + index
 print('\n2) for + string + index')
+# - podemos usar un contador externo que interactúe con el for como índice
+
+cadena = 'Ecuador'
+index = 0
+
+for letra in cadena:
+    print('cadena[' + str(index) + '] =' , letra)
+    index += 1
+# end for
+
+# => podemos utilizar for de 2 maneras
+print()
+
+index = 0
+
+for letra in cadena:
+    print( cadena[index] , '---' , letra )
+    index += 1
+# end for
 
 
 
 #? 3) Uso más común => for + range
 print('\n3) Uso más común => for + range')
+# - iterar números del 1 al 10
+
+for x in range(1,11):
+    print('Número =', x)
+# end for
+
 
 
 
 #? 4) Repaso: range con salto
 print('\n4) Repaso: range con salto')
+# - contar del 1 al 20 en saltos de 3
+
+for x in range(1,21,3):
+    print('Número con salto =', x)
+# end for
 
 
 
 #? 5) for + listas
 print('\n5) for + listas')
+
+heroes = ['superman', 'goku', 'batman', 'spiderman']
+
+for heroe in heroes:
+    print(heroe , type(heroe))
+# end for
+
+
+#* NOTA:
+# - muchas veces se suele usar el singular de la variable a recorrer
+# - como una recomendación de legibilidad de nuestro código
+# - sin embargo podemos usar cualquier nombre
 
 
 
@@ -74,9 +124,31 @@ print('\n5) for + listas')
 print('\n6) for + listas + index')
 
 # - igualmente podemos valernos de un contador externo que funcione como index
-# - de esta manera podemos complementar la iteración de una secuancia
+# - de esta manera podemos complementar la iteración de una secuencia
+
+heroes = ['superman', 'goku', 'batman', 'spiderman']
+index = 0
+
+for heroe in heroes:
+    print( 'heroe[' + str(index) + '] =' , heroe )
+    index += 1
+# end for
+
+print()
+
+index = 0
+
+for heroe in heroes:
+    print( heroes[index] , '--' , heroe )
+    index += 1
+# end for
 
 
 
 #? 8) range vs. list
 print('\n8) range vs. list')
+# - en python 2 el range se traducía a una lista
+# - range(5) = [0,1,2,3,4]
+# - el range no existe en memoria, se interpreta cuando la instrucción se ejecuta
+# - si se creara en memoria => ocuparía espacio
+# - por tanto es más óptimo utilizar range para la iteración

@@ -10,7 +10,65 @@
 #? 1) Modificar string con bucle for
 print('\n1) Modificar string con bucle for\n')
 
+nombre = 'python'
+nombre_modificado = ''
+caracter_especial = '---'
+
+for letra in nombre:
+    nombre_modificado = nombre_modificado + letra + caracter_especial
+# end for
+
+print('nombre =', nombre) # nombre = python
+print('nombre_modificado =', nombre_modificado) # nombre_modificado = p---y---t---h---o---n---
+
+print()
+
+nombre = 'python'
+nombre_modificado = ''
+caracter_especial = '---'
+
+for letra in nombre:
+    #nombre_modificado = nombre_modificado + letra + caracter_especial
+    nombre_modificado += letra + caracter_especial
+# end for
+
+print('nombre =', nombre) # nombre = python
+print('nombre_modificado =', nombre_modificado) # nombre_modificado = p---y---t---h---o---n---
+
+
+#           p---y---t---h---o---n
+
+
+# ----------------------------------------------------------------------
+# - un problema si deseamos ser meticulosos en esto
+# - es que el caracter especial se imprime después de la última letra
+# - podríamos evitar esto
+# - modificando un poco nuestro bucle
+# ----------------------------------------------------------------------
+
 
 
 #? 2) Corrigiendo el problema
 print('\n2) Corrigiendo el problema\n')
+
+nombre = 'python'
+nombre_modificado = ''
+caracter_especial = '---'
+
+index = 0
+
+for letra in nombre:
+    
+    if index == len(nombre) - 1:
+        #nombre_modificado = nombre_modificado + letra
+        nombre_modificado += letra
+    else:
+        nombre_modificado += letra + caracter_especial
+    # end if
+    
+    index += 1
+# end for
+
+
+print('nombre =', nombre) # nombre = python
+print('nombre_modificado =', nombre_modificado) # nombre_modificado = p---y---t---h---o---n
