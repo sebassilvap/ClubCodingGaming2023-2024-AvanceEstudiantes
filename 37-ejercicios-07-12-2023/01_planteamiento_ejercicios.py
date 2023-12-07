@@ -7,7 +7,7 @@
 # EJERCICIO 1)
 print('\n\nEJERCICIO 1)\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# - por medio de un bucle convertir la variable "palabra"
+# - por medio de un bucle convertir la variable "palabra" => palabra = 'neueschule'
 # - a "nueva_palabra"
 # - de tal manera que nueva_palabra = 'nEuEsChUlE'
 # - queda prohibido utilizar una modificación directa
@@ -15,7 +15,10 @@ print('\n\nEJERCICIO 1)\n')
 # - nueva_palabra = 'nEuEsChUlE'
 # - se debe usar un bucle
 
-
+'''
+palabra = 'neueschule'
+nueva_palabra = 'nEuEsChUlE'
+'''
 
 
 
@@ -44,10 +47,15 @@ print( type(promedio(15,20,14)) )
 print('\n\nEJERCICIO 3)\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - Pedir al usuario una palabra con input
-# - si el usuario da una palabra, ej: 'hOlA'
+# - si el usuario da una palabra, ej: '          hOlA          ' 
 # - la consola debe retornar:
 # - CUIDADO: con espacios y case / todo debe presentarse en minúsculas
-
+"""
+h
+oo
+lll
+aaaa
+"""
 
 
 
